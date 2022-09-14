@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --default-font-family: 'Manrope', sans-serif;
+    --default-font-size: 18px;
+    --parent-height:100vh;
+    --parent-width:100vw;
+    --card-container-height:30rem;
+    --card-container-width:29rem;
+    --card-margin:2.5rem;
+    --card-font-weight:900;
+    --payment-margin:3rem;
+    --payment-p-font-size: 1rem;
+    --payment-image-height:4rem;
+    --card-border-radius:1rem;
+    --card-padding:1.5rem;
+    --card-input-margin:.5rem .5rem .5rem 0;
+    --card-input-padding:1rem;
+    --card-input-border-radius:1rem;
+    --card-box-shadow:2rem;
+    --button-margin:1.5rem 0.8rem 0.8rem .8rem;
+    --button-padding:1rem;
+    --button-border-radius:1rem;
+    --button-background-color:#00BFA5;
+    --button-border:none;
+    --button-font-weight:800;
+
+}
+
+body{
+    font-family: var(--default-font-family);
+    font-weight: 500;
+    color: rgb(45, 43, 43);
+}
+.parent{
+    width: var(--parent-width);
+    height: var(--parent-height);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #F8F7F7;
+}
+.card-container{
+    /*background-color: aqua;*/
+    height: var(--card-container-height);
+    width: var(--card-container-width);
+}
+.card-container>h2{
+    text-align: center;
+    color: #00BFA5;
+    font-weight: 800;
+    margin-top: 4rem;
+}
+.card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: var(--card-margin);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+    font-weight: var(--card-font-weight);
+    box-shadow: 4px 4px 80px hsla(172, 100%, 37%, 0.2);
+
+    
+}
+
+.card>input , .card>textarea{
+    margin: var(--card-input-margin);
+    padding: var( --card-input-padding);
+    border-radius: var(--card-input-border-radius);
+    border: 1px solid rgb(129, 122, 122);
+    font-size: 1rem;
+    color:#454e4c;
+}
+
+
+.card>input{
+    margin-bottom: 1rem;
+}
+.card>input:focus , .card>textarea:focus{
+    outline: none !important;
+    border:1px solid #00BFA5;
+}
+button{
+    border-radius: var(--button-border-radius);
+    margin: var(--button-margin);
+    padding: var(--button-padding);
+    font-weight: var(--button-font-weight);
+    background-color: var(--button-background-color);
+    border: var(--button-border);
+    font-size: 1rem;
+    color: rgb(45, 43, 43);
+
+}
+button:hover{
+    background-color: #06af99;
+    cursor: pointer;
+}
+.payment{
+    /*background-color: blueviolet;*/
+    display: flex;
+    gap: 4rem;
+    margin: var(--payment-margin);
+    
+}
+.payment>p{
+    font-size: var(--payment-p-font-size);
+}
+.payment>img{
+    height: var(--payment-image-height);
+}
